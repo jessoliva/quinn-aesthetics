@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7733a9cf21.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="modal.css" />
+    <!-- javascript -->
+    <script></script>
+  </head>
+  <body>
+    <div id="firstPage" class="firstPage show"></div>
+
+    <div id="modal" class="modal-overlay">
+      <div class="modal-content">
+        <section class="header">
+          <img src="quinn-logo-new.png" alt="logo" width="60px" />
+          <button>
+            <img id="close-btn" src="close.png" alt="logo" width="30px" />
+          </button>
+        </section>
+        <section class="consultation">
+          <h1>
+            Would you like a free virtual consultation?
+            <button id="consult-btn">Start Consult Now</button>
+          </h1>
+        </section>
+      </div>
+    </div>
+
+    <div id="consultPage" class="body-img hide">
+      <img src="quinn-body.png" alt="body" width="600px" />
+      <div class="faceGlow"></div>
+      <div id="face-btn" class="faceBtn"></div>
+    </div>
+
+    <div id="facePage" class="face-img hide">
+      <img src="quinn-face.png" alt="body" width="600px" />
+      <!-- <div class="faceGlow"></div> -->
+    </div>
+  </body>
+
+  <script src="modal.js"></script>
+</html>

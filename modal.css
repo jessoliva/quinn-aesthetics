@@ -1,0 +1,243 @@
+html, body {
+    min-height: 100vh;
+    /* height: 100%; */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FIRST PAGE */
+.firstPage {
+    background: rgb(92, 49, 49);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+/*  */
+
+/* MODAL */
+.modal-overlay {
+    opacity: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(57, 32, 32, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    vertical-align: middle;
+}
+
+.modal-content {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    height: 150px;
+    border-radius: 8px;
+    background: #e3b496;
+    box-shadow: 0 0 10px rgba(52, 52, 52, 0.5);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 28%;
+    border-radius: 8px 8px 0 0;
+    background: #f2efe7;
+    margin: 0;
+    padding: 0 15px 0 20px;
+}
+
+.header button {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 1s ease-out;
+}
+
+.header button:hover {
+    background: rgba(52, 52, 52, 0.5);
+    transition: background .5s ease-out;
+}
+
+.consultation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 72%;
+    margin: 0;
+    text-align: center;
+}
+
+.consultation h1 {
+    margin: 0;
+    width: 100%;
+}
+
+.consultation h1 button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #f2efe7;
+    border-radius: 6px;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    width: 50%;
+    height: 35px;
+    margin-top: 15px;
+    background: rgb(52, 52, 52);
+    cursor: pointer;
+    transition: 1s ease-out;
+}
+
+.consultation h1 button:hover {
+    opacity: 0.7;
+    transition: opacity .5s ease-out;
+}
+/* */
+
+/* BODY IMAGE */
+.body-img {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    /* min-width: 100vw; */
+    /* min-height: 100vh; */
+    /* background-image: url(quinn-body.png);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat; */
+}
+
+.faceGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 60px;
+    left: 140px;
+    animation: glow 2s ease-in-out infinite alternate;
+    z-index: 99;
+    /* height: 120px;
+    width: 80px; */
+}
+
+.faceBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: 120px;
+    width: 80px;
+    top: 0px;
+    left: 100.5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* glow effects */
+@keyframes glow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 60px 42px #e5a2e9;
+            /* 0 0 10px rgba(229, 162, 233, 0.6) inset, 
+            0 0 20px rgba(229, 162, 233, 0.6) inset, 
+            0 0 30px rgba(229, 162, 233, 0.6) inset, 
+            0 0 40px rgba(229, 162, 233, 0.6) inset, 
+            0 0 50px rgba(229, 162, 233, 0.6) inset, 
+            0 0 60px rgba(229, 162, 233, 0.6) inset, 
+            0 0 70px rgba(229, 162, 233, 0.6) inset, 
+            0 0 80px rgba(229, 162, 233, 0.6) inset,  */
+            /* 0 0 40px 60px #e5a2e9, 
+            0 0 80px #e5a2e9, 
+            0 0 110px #e5a2e9, 
+            0 0 140px #e5a2e9, 
+            0 0 170px #e5a2e9, 
+            0 0 200px #e5a2e9, 
+            0 0 230px #e5a2e9, 
+            0 0 250px #e5a2e9; */
+            /* 0 0 40px 60px rgba(229, 162, 233, 0.9), 
+            0 0 80px rgba(229, 162, 233, 0.9),
+            0 0 110px rgba(229, 162, 233, 0.9), 
+            0 0 140px rgba(229, 162, 233, 0.9), 
+            0 0 170px rgba(229, 162, 233, 0.9),
+            0 0 200px rgba(229, 162, 233, 0.9),
+            0 0 230px rgba(229, 162, 233, 0.9)
+            0 0 250px rgba(229, 162, 233, 0.9); */
+            /* 0 0 50px 20px #e5a2e9, */
+            /* 0 0 140px 70px #f0f; */
+    }
+
+    /* to {
+        color: gray;
+        box-shadow: 
+            0 0 50px #e5a2e9, 
+            0 0 80px #e5a2e9, 
+            0 0 110px #e5a2e9, 
+            0 0 140px #e5a2e9, 
+            0 0 170px #e5a2e9, 
+            0 0 200px #e5a2e9, 
+            0 0 230px #e5a2e9, 
+            0 1 250px #e5a2e9;
+    } */
+}
+/* #00fff2, */
+
+/* TRANSITIONS */
+/* fade modal */
+.fade-in {
+    opacity: 1;
+    animation: show 2s;
+    z-index: 99;
+}
+  
+@keyframes show {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+}
+
+.fade-out {
+    opacity: 0;
+    animation: hide 1s
+    /* animation-fill-mode: forwards; */
+}
+  
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+/* hide */
+/* .show {
+    visibility: visible;
+    z-index: 100;
+} */
+
+.hide {
+    /* visibility: hidden; */
+    display: none;
+    /* z-index: -1; */
+    transition: display 2s ease-in-out;
+}
