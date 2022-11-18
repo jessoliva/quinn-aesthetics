@@ -7,7 +7,7 @@ const modalEl = document.getElementById('modal');
 // display modal after 5 seconds
 setTimeout(function () {
     modalEl.classList.add('fade-in');
-}, 2000);
+}, 5000);
 //
 // close modal
 const closeBtnEl = document.getElementById('close-btn');
@@ -37,6 +37,7 @@ consultBtnEl.addEventListener('click', consultation);
 
 // face button element
 const faceBtnEl = document.getElementById('face-btn');
+const headBtnEl = document.getElementById('head-btn');
 const faceEl = document.getElementById('facePage');
 //
 // display face image
@@ -51,6 +52,7 @@ function face() {
     }, 1000);
 }
 faceBtnEl.addEventListener('click', face);
+headBtnEl.addEventListener('click', face);
 
 // closeBtnEl.addEventListener('click', function() {
 //     modalEl.classList.add('hidden');

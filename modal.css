@@ -122,6 +122,7 @@ html, body {
     background-repeat: no-repeat; */
 }
 
+/* face */
 .faceGlow {
     position: absolute;
     /* border: solid 1px black; */
@@ -130,7 +131,7 @@ html, body {
     width: .1px;
     top: 60px;
     left: 140px;
-    animation: glow 2s ease-in-out infinite alternate;
+    animation: faceGlow 2s ease-in-out infinite alternate;
     z-index: 99;
     /* height: 120px;
     width: 80px; */
@@ -148,8 +149,34 @@ html, body {
     z-index: 100;
 }
 
+.headGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 60px;
+    left: 457px;
+    animation: faceGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+    /* height: 120px;
+    width: 80px; */
+}
+
+.headBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: 120px;
+    width: 80px;
+    top: 0px;
+    left: 417.5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
 /* glow effects */
-@keyframes glow {
+@keyframes faceGlow {
     from {
         color: #fff;
         box-shadow: 0 0 60px 42px #e5a2e9;
@@ -195,6 +222,345 @@ html, body {
     } */
 }
 /* #00fff2, */
+
+/* chest */
+.chestGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 150px;
+    left: 140px;
+    animation: chestGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+    /* height: 120px;
+    width: 80px; */
+}
+
+.chestBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: 40px;
+    width: 80px;
+    top: 128px;
+    left: 100.5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes chestGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 30px 20px #e5a2e9;
+    }
+}
+
+/* breast */
+.breastGlow1 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 185px;
+    left: 105px;
+    animation: breastGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+    /* height: 120px;
+    width: 80px; */
+}
+
+.breastGlow2 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 185px;
+    left: 175px;
+    animation: breastGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+    /* height: 120px;
+    width: 80px; */
+}
+
+.breastBtn1 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 20%;
+    height: 28px;
+    width: 120px;
+    top: 175px;
+    left: 80px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes breastGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 20px 10px #e5a2e9;
+    }
+}
+
+/* armpits */
+.armpitsGlow1 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .2px;
+    width: .2px;
+    top: 175px;
+    left: 72.5px;
+    animation: armpitsGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.armpitsGlow2 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .2px;
+    width: .2px;
+    top: 175px;
+    left: 209px;
+    animation: armpitsGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.armpitsBtn1 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 25px;
+    width: 20px;
+    top: 162px;
+    left: 200px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.armpitsBtn2 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 25px;
+    width: 20px;
+    top: 162px;
+    left: 60px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes armpitsGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 15px 8px #e5a2e9;
+    }
+}
+
+/* arms */
+.armGlow1 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 260px;
+    left: 65px;
+    animation: armGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.armGlow2 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 260px;
+    left: 217px;
+    animation: armGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.armGlow3 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 260px;
+    left: 380px;
+    animation: armGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.armGlow4 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 260px;
+    left: 532px;
+    animation: armGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.armBtn1 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 65px;
+    width: 20px;
+    top: 230px;
+    left: 56px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.armBtn2 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 65px;
+    width: 20px;
+    top: 230px;
+    left: 206px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.armBtn3 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 65px;
+    width: 20px;
+    top: 230px;
+    left: 372.5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.armBtn4 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 65px;
+    width: 20px;
+    top: 230px;
+    left: 522px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+@keyframes armGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 30px 20px #e5a2e9;
+    }
+}
+
+/* abdomen */
+.abGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 267px;
+    left: 140px;
+    animation: abGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.abBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 30%;
+    height: 115px;
+    width: 90px;
+    top: 220px;
+    left: 95px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes abGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 50px 35px #e5a2e9;
+    }
+}
+
+/* back */
+.backGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 190px;
+    left: 457px;
+    animation: backGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.backBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 30%;
+    height: 180px;
+    width: 100px;
+    top: 115px;
+    left: 407px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes backGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 60px 50px #e5a2e9;
+    }
+}
+
+/* genitals */
+.genGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 365px;
+    left: 140px;
+    animation: genGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.genBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: 335px;
+    left: 115px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes genGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 30px 20px #e5a2e9;
+    }
+}
 
 /* TRANSITIONS */
 /* fade modal */
