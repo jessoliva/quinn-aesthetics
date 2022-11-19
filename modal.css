@@ -175,7 +175,6 @@ html, body {
     z-index: 100;
 }
 
-/* glow effects */
 @keyframes faceGlow {
     from {
         color: #fff;
@@ -562,6 +561,119 @@ html, body {
     }
 }
 
+/* buttocks */
+.buttGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 355px;
+    left: 457px;
+    animation: buttGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.buttBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 40%;
+    height: 90px;
+    width: 125px;
+    top: 305px;
+    left: 394px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes buttGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 60px 50px #e5a2e9;
+    }
+}
+
+/* legs */
+
+.legGlow1 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 505px;
+    left: 115px;
+    animation: legGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.legGlow2 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 505px;
+    left: 165px;
+    animation: legGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.legGlow3 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 505px;
+    left: 432px;
+    animation: legGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.legGlow4 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 505px;
+    left: 482px;
+    animation: legGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.legBtn12 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 20%;
+    height: 295px;
+    width: 80px;
+    top: 395px;
+    left: 100px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.legBtn34 {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 20%;
+    height: 295px;
+    width: 80px;
+    top: 395px;
+    left: 418px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes legGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 30px 20px #e5a2e9;
+    }
+}
+
 /* TRANSITIONS */
 /* fade modal */
 .fade-in {
@@ -606,4 +718,9 @@ html, body {
     display: none;
     /* z-index: -1; */
     transition: display 2s ease-in-out;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+
 }
