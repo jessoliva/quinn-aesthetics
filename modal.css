@@ -110,16 +110,14 @@ html, body {
 /* */
 
 /* BODY IMAGE */
-.body-img {
+.bodyPage {
     position: relative;
     text-align: center;
     margin: 20px;
-    /* min-width: 100vw; */
-    /* min-height: 100vh; */
-    /* background-image: url(quinn-body.png);
-    background-position: center;
-    background-size: auto 100%;
-    background-repeat: no-repeat; */
+}
+
+.bodyImg {
+    width: 600px;
 }
 
 /* face */
@@ -179,48 +177,8 @@ html, body {
     from {
         color: #fff;
         box-shadow: 0 0 60px 42px #e5a2e9;
-            /* 0 0 10px rgba(229, 162, 233, 0.6) inset, 
-            0 0 20px rgba(229, 162, 233, 0.6) inset, 
-            0 0 30px rgba(229, 162, 233, 0.6) inset, 
-            0 0 40px rgba(229, 162, 233, 0.6) inset, 
-            0 0 50px rgba(229, 162, 233, 0.6) inset, 
-            0 0 60px rgba(229, 162, 233, 0.6) inset, 
-            0 0 70px rgba(229, 162, 233, 0.6) inset, 
-            0 0 80px rgba(229, 162, 233, 0.6) inset,  */
-            /* 0 0 40px 60px #e5a2e9, 
-            0 0 80px #e5a2e9, 
-            0 0 110px #e5a2e9, 
-            0 0 140px #e5a2e9, 
-            0 0 170px #e5a2e9, 
-            0 0 200px #e5a2e9, 
-            0 0 230px #e5a2e9, 
-            0 0 250px #e5a2e9; */
-            /* 0 0 40px 60px rgba(229, 162, 233, 0.9), 
-            0 0 80px rgba(229, 162, 233, 0.9),
-            0 0 110px rgba(229, 162, 233, 0.9), 
-            0 0 140px rgba(229, 162, 233, 0.9), 
-            0 0 170px rgba(229, 162, 233, 0.9),
-            0 0 200px rgba(229, 162, 233, 0.9),
-            0 0 230px rgba(229, 162, 233, 0.9)
-            0 0 250px rgba(229, 162, 233, 0.9); */
-            /* 0 0 50px 20px #e5a2e9, */
-            /* 0 0 140px 70px #f0f; */
     }
-
-    /* to {
-        color: gray;
-        box-shadow: 
-            0 0 50px #e5a2e9, 
-            0 0 80px #e5a2e9, 
-            0 0 110px #e5a2e9, 
-            0 0 140px #e5a2e9, 
-            0 0 170px #e5a2e9, 
-            0 0 200px #e5a2e9, 
-            0 0 230px #e5a2e9, 
-            0 1 250px #e5a2e9;
-    } */
 }
-/* #00fff2, */
 
 /* chest */
 .chestGlow {
@@ -233,8 +191,6 @@ html, body {
     left: 140px;
     animation: chestGlow 2s ease-in-out infinite alternate;
     z-index: 99;
-    /* height: 120px;
-    width: 80px; */
 }
 
 .chestBtn {
@@ -266,9 +222,6 @@ html, body {
     top: 185px;
     left: 105px;
     animation: breastGlow 2s ease-in-out infinite alternate;
-    z-index: 99;
-    /* height: 120px;
-    width: 80px; */
 }
 
 .breastGlow2 {
@@ -281,8 +234,6 @@ html, body {
     left: 175px;
     animation: breastGlow 2s ease-in-out infinite alternate;
     z-index: 99;
-    /* height: 120px;
-    width: 80px; */
 }
 
 .breastBtn1 {
@@ -707,12 +658,6 @@ html, body {
     }
 }
 
-/* hide */
-/* .show {
-    visibility: visible;
-    z-index: 100;
-} */
-
 .hide {
     /* visibility: hidden; */
     display: none;
@@ -720,7 +665,442 @@ html, body {
     transition: display 2s ease-in-out;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 600px) {
+/* FACE PAGE */
+/* .bodyPage {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+} */
 
+.facePg {
+    /* position: relative;
+    text-align: center;
+    margin: 20px;
+    width: 100%; */
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+/* .mainFace {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+} */
+
+.faceImg {
+    width: 500px;
+    /* height: auto;
+    max-height: 100vh; */
+}
+
+/* half */
+.half {
+    position: absolute;
+    border: solid 2px black;
+    height: 500px;
+    width: 0.1px;
+    top: 50px;
+    left: 261px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* eyes */
+.eyeGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 268px;
+    left: 337px;
+    animation: eyeGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.eyeBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 50%;
+    height: 60px;
+    width: 100px;
+    top: 235px;
+    left: 290px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes eyeGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 30px 20px #e5a2e9;
+    }
+}
+
+/* scalp */
+.scalpGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 90px;
+    left: 317px;
+    animation: scalpGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.scalpBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 30%;
+    height: 70px;
+    width: 130px;
+    top: 50px;
+    left: 260px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes scalpGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 30px 20px #e5a2e9;
+    }
+}
+
+/* forehead */
+.foreGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .1px;
+    width: .3px;
+    top: 170px;
+    left: 337px;
+    animation: foreGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.foreBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 30%;
+    height: 70px;
+    width: 160px;
+    top: 140px;
+    left: 260px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes foreGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 40px 30px #e5a2e9;
+    }
+}
+
+/* cheeks */
+.cheekGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .1px;
+    width: .3px;
+    top: 340px;
+    left: 360px;
+    animation: cheekGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.cheekBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 20%;
+    height: 70px;
+    width: 110px;
+    top: 305px;
+    left: 300px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes cheekGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 30px 25px #e5a2e9;
+    }
+}
+
+/* nose */
+.noseGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .3px;
+    width: .1px;
+    top: 340px;
+    left: 280px;
+    animation: noseGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.noseBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 10%;
+    height: 95px;
+    width: 30px;
+    top: 270px;
+    left: 260px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes noseGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 20px 15px #e5a2e9;
+    }
+}
+
+/* lips */
+.lipsGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .1px;
+    width: .3px;
+    top: 420px;
+    left: 280px;
+    animation: lipsGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.lipsBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 30%;
+    height: 40px;
+    width: 50px;
+    top: 400px;
+    left: 260px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes lipsGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 20px 15px #e5a2e9;
+    }
+}
+
+/* chin */
+.chinGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .1px;
+    width: .3px;
+    top: 493px;
+    left: 290px;
+    animation: chinGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.chinBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 40%;
+    height: 70px;
+    width: 50px;
+    top: 460px;
+    left: 270px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes chinGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 22px 18px #e5a2e9;
+    }
+}
+
+/* jaw */
+.jawGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .1px;
+    width: .3px;
+    top: 453px;
+    left: 370px;
+    animation: jawGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.jawBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 40%;
+    height: 35px;
+    width: 110px;
+    top: 435px;
+    left: 310px;
+    cursor: pointer;
+    z-index: 100;
+    transform: rotate(130deg);
+}
+
+/* jaw */
+.neckGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: .1px;
+    width: .3px;
+    top: 590px;
+    left: 263px;
+    animation: neckGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.neckBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 20%;
+    height: 115px;
+    width: 190px;
+    top: 535px;
+    left: 170px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes neckGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 60px 50px #e5a2e9;
+    }
+}
+
+/* half face */
+.halfGlow {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 45%;
+    height: 300px;
+    width: .01px;
+    top: 133px;
+    left: 180px;
+    animation: halfGlow 2s ease-in-out infinite alternate;
+    z-index: 99;
+}
+
+.halfBtn {
+    position: absolute;
+    /* border: solid 1px black; */
+    border-radius: 90% 10% 10% 99%;
+    height: 480px;
+    width: 160px;
+    top: 50px;
+    left: 100px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+@keyframes halfGlow {
+    from {
+        color: #fff;
+        box-shadow: 
+            0 0 100px 75px #e5a2e9
+            /* 0 0 10px rgba(229, 162, 233, 0.6) inset, 
+            0 0 20px rgba(229, 162, 233, 0.6) inset, 
+            0 0 30px rgba(229, 162, 233, 0.6) inset, 
+            0 0 40px rgba(229, 162, 233, 0.6) inset, 
+            0 0 50px rgba(229, 162, 233, 0.6) inset, 
+            0 0 60px rgba(229, 162, 233, 0.6) inset, 
+            0 0 70px rgba(229, 162, 233, 0.6) inset, 
+            0 0 80px rgba(229, 162, 233, 0.6) inset; */
+    }
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 615px) {
+    .bodyPage {
+        zoom: 95%;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .bodyPage {
+        zoom: 95%;
+    }
+}
+
+@media only screen and (max-width: 592px) {
+    .bodyPage {
+        zoom: 90%;
+    }
+}
+
+@media only screen and (max-width: 551px) {
+    .bodyPage {
+        zoom: 80%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .bodyPage {
+        zoom: 65%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bodyPage {
+        zoom: 50%;
+    }
+}
+
+@media only screen and (max-width: 316px) {
+    .bodyPage {
+        zoom: 40%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .facePg {
+        zoom: 85%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .facePg {
+        zoom: 65%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .facePg {
+        zoom: 50%;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    .facePg {
+        zoom: 40%;
+    }
+}
+
+@media only screen and (max-width: 188px) {
+    .facePg {
+        zoom: 30%;
+    }
 }
