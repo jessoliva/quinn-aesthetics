@@ -1,6 +1,5 @@
 html, body {
     min-height: 100vh;
-    /* height: 100%; */
     padding: 0;
     display: flex;
     justify-content: center;
@@ -28,7 +27,6 @@ html, body {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(57, 32, 32, 0.5);
-    /* background-color: rgba(255, 255, 255, 0.5); */
     vertical-align: middle;
 }
 
@@ -64,7 +62,7 @@ html, body {
     background: none;
     border: none;
     cursor: pointer;
-    transition: 1s ease-out;
+    transition: 1.5s ease-out;
 }
 
 .header button:hover {
@@ -100,7 +98,7 @@ html, body {
     margin-top: 15px;
     background: rgb(52, 52, 52);
     cursor: pointer;
-    transition: 1s ease-out;
+    transition: 1.5s ease-out;
 }
 
 .consultation h1 button:hover {
@@ -127,9 +125,9 @@ html, body {
     border-radius: 45%;
     height: .3px;
     width: .1px;
-    top: 60px;
+    top: 55px;
     left: 140px;
-    animation: faceGlow 2s ease-in-out infinite alternate;
+    animation: faceGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
     /* height: 120px;
     width: 80px; */
@@ -153,9 +151,9 @@ html, body {
     border-radius: 45%;
     height: .3px;
     width: .1px;
-    top: 60px;
+    top: 55px;
     left: 457px;
-    animation: faceGlow 2s ease-in-out infinite alternate;
+    animation: faceGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
     /* height: 120px;
     width: 80px; */
@@ -176,7 +174,7 @@ html, body {
 @keyframes faceGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 60px 42px #e5a2e9;
+        box-shadow: 0 0 50px 35px #e5a2e9;
     }
 }
 
@@ -189,7 +187,7 @@ html, body {
     width: .1px;
     top: 150px;
     left: 140px;
-    animation: chestGlow 2s ease-in-out infinite alternate;
+    animation: chestGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -221,7 +219,7 @@ html, body {
     width: .1px;
     top: 185px;
     left: 105px;
-    animation: breastGlow 2s ease-in-out infinite alternate;
+    animation: breastGlow 1.5s ease-in-out infinite alternate;
 }
 
 .breastGlow2 {
@@ -232,7 +230,7 @@ html, body {
     width: .1px;
     top: 185px;
     left: 175px;
-    animation: breastGlow 2s ease-in-out infinite alternate;
+    animation: breastGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -264,7 +262,7 @@ html, body {
     width: .2px;
     top: 175px;
     left: 72.5px;
-    animation: armpitsGlow 2s ease-in-out infinite alternate;
+    animation: armpitsGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -276,7 +274,7 @@ html, body {
     width: .2px;
     top: 175px;
     left: 209px;
-    animation: armpitsGlow 2s ease-in-out infinite alternate;
+    animation: armpitsGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -320,7 +318,7 @@ html, body {
     width: .1px;
     top: 260px;
     left: 65px;
-    animation: armGlow 2s ease-in-out infinite alternate;
+    animation: armGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -332,7 +330,7 @@ html, body {
     width: .1px;
     top: 260px;
     left: 217px;
-    animation: armGlow 2s ease-in-out infinite alternate;
+    animation: armGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -344,7 +342,7 @@ html, body {
     width: .1px;
     top: 260px;
     left: 380px;
-    animation: armGlow 2s ease-in-out infinite alternate;
+    animation: armGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -356,7 +354,7 @@ html, body {
     width: .1px;
     top: 260px;
     left: 532px;
-    animation: armGlow 2s ease-in-out infinite alternate;
+    animation: armGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -425,7 +423,7 @@ html, body {
     width: .1px;
     top: 267px;
     left: 140px;
-    animation: abGlow 2s ease-in-out infinite alternate;
+    animation: abGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -457,7 +455,7 @@ html, body {
     width: .1px;
     top: 190px;
     left: 457px;
-    animation: backGlow 2s ease-in-out infinite alternate;
+    animation: backGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -489,7 +487,7 @@ html, body {
     width: .1px;
     top: 365px;
     left: 140px;
-    animation: genGlow 2s ease-in-out infinite alternate;
+    animation: genGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -521,7 +519,7 @@ html, body {
     width: .1px;
     top: 355px;
     left: 457px;
-    animation: buttGlow 2s ease-in-out infinite alternate;
+    animation: buttGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -554,7 +552,7 @@ html, body {
     width: .1px;
     top: 505px;
     left: 115px;
-    animation: legGlow 2s ease-in-out infinite alternate;
+    animation: legGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -566,7 +564,7 @@ html, body {
     width: .1px;
     top: 505px;
     left: 165px;
-    animation: legGlow 2s ease-in-out infinite alternate;
+    animation: legGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -578,7 +576,7 @@ html, body {
     width: .1px;
     top: 505px;
     left: 432px;
-    animation: legGlow 2s ease-in-out infinite alternate;
+    animation: legGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -590,7 +588,7 @@ html, body {
     width: .1px;
     top: 505px;
     left: 482px;
-    animation: legGlow 2s ease-in-out infinite alternate;
+    animation: legGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -629,7 +627,7 @@ html, body {
 /* fade modal */
 .fade-in {
     opacity: 1;
-    animation: show 2s;
+    animation: show 1.5s;
     z-index: 99;
 }
   
@@ -644,7 +642,7 @@ html, body {
 
 .fade-out {
     opacity: 0;
-    animation: hide 1s
+    animation: hide 1.5s
     /* animation-fill-mode: forwards; */
 }
   
@@ -662,7 +660,7 @@ html, body {
     /* visibility: hidden; */
     display: none;
     /* z-index: -1; */
-    transition: display 2s ease-in-out;
+    transition: display 1.5s ease-in-out;
 }
 
 /* FACE PAGE */
@@ -716,7 +714,7 @@ html, body {
     width: .1px;
     top: 268px;
     left: 337px;
-    animation: eyeGlow 2s ease-in-out infinite alternate;
+    animation: eyeGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -748,7 +746,7 @@ html, body {
     width: .1px;
     top: 90px;
     left: 317px;
-    animation: scalpGlow 2s ease-in-out infinite alternate;
+    animation: scalpGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -780,7 +778,7 @@ html, body {
     width: .3px;
     top: 170px;
     left: 337px;
-    animation: foreGlow 2s ease-in-out infinite alternate;
+    animation: foreGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -812,7 +810,7 @@ html, body {
     width: .3px;
     top: 340px;
     left: 360px;
-    animation: cheekGlow 2s ease-in-out infinite alternate;
+    animation: cheekGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -844,7 +842,7 @@ html, body {
     width: .1px;
     top: 340px;
     left: 280px;
-    animation: noseGlow 2s ease-in-out infinite alternate;
+    animation: noseGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -876,7 +874,7 @@ html, body {
     width: .3px;
     top: 420px;
     left: 280px;
-    animation: lipsGlow 2s ease-in-out infinite alternate;
+    animation: lipsGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -908,7 +906,7 @@ html, body {
     width: .3px;
     top: 493px;
     left: 290px;
-    animation: chinGlow 2s ease-in-out infinite alternate;
+    animation: chinGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -940,7 +938,7 @@ html, body {
     width: .3px;
     top: 453px;
     left: 370px;
-    animation: jawGlow 2s ease-in-out infinite alternate;
+    animation: jawGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -966,7 +964,7 @@ html, body {
     width: .3px;
     top: 590px;
     left: 263px;
-    animation: neckGlow 2s ease-in-out infinite alternate;
+    animation: neckGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
@@ -998,7 +996,7 @@ html, body {
     width: .01px;
     top: 133px;
     left: 180px;
-    animation: halfGlow 2s ease-in-out infinite alternate;
+    animation: halfGlow 1.5s ease-in-out infinite alternate;
     z-index: 99;
 }
 
