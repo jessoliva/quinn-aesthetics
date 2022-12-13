@@ -768,6 +768,7 @@ html, body {
     max-height: 100vh; */
 }
 
+/* full face text */
 .faceText {
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
@@ -799,26 +800,72 @@ html, body {
     color: rgb(92, 49, 49);
 }
 
-.areasText {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
+/* areas text */
+.areasDiv { /* child of bigger parent facePg */
     position: absolute;
-    width: 190px;
     top: -20px;
     left: 440px;
-    /*border: 2px solid black;*/
+}
+
+/* dropdown text */
+.dropdownFace { /* parent */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentFace { /* child of parent */
+    display: none;
+    position: absolute;
+    left: 55px;
+    border-radius: 0 0 6px 6px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownFace:hover .dropdown-contentFace {
+    display: block;
+}
+  
+.dropdown-contentFace a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    background: #e3b496;
+    color: rgb(92, 49, 49);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdownFace a:hover {
+    background: rgba(227, 180, 150, 0.7);
+    transition: background .5s ease-out;
+    color: rgb(92, 49, 49);
+}    
+  
+.show {
+    display: block;
+}
+
+.areasText { /* child */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    /* position: absolute; */
+    width: 220px;
+    /* top: -20px;
+    left: 440px; */
     background: #e3b496;
     border-radius: 6px;
+    border: none;
     padding: 8px 18px;
     color: rgb(92, 49, 49);
-    /* color: white; */
     transition: .5s ease-out;
+    cursor: pointer;
 }
 
 .areasText:hover {
-    /* background-color: rgba(92, 49, 49, 1); */
     background: rgba(227, 180, 150, 0.7);
-    /* background: rgba(52, 52, 52, 0.5); */
     transition: background .5s ease-out;
 }
 
@@ -1175,41 +1222,39 @@ html, body {
     }
     
     .areasText {
-        width: 210px;
+        width: 220px;
+        /* top: -40px;
+        left: 330px; */
+    }
+
+    .areasDiv {
         top: -40px;
-        left: 330px;
+        left: 330px; 
     }
 }
 
 @media only screen and (max-width: 669px) {
-    .faceText {
-        top: -40px;
-        left: 30px;
-        font-size: 30px;
-    }
-    
-    .areasText {
-        width: 120px;
-        top: -80px;
-        left: 330px;
-        font-size: 30px;
+    .faceText, .areasText {
+        font-size: 25px;
     }
 }
 
 @media only screen and (max-width: 615px) {
-    .bodyPage {
+    .bodyPage, .facePg {
         zoom: 95%;
     }
+
+
 }
 
 @media only screen and (max-width: 592px) {
-    .bodyPage {
+    .bodyPage, .facePg {
         zoom: 90%;
     }
 }
 
 @media only screen and (max-width: 551px) {
-    .bodyPage {
+    .bodyPage, .facePg {
         zoom: 80%;
     }
 }
@@ -1218,11 +1263,13 @@ html, body {
     .bodyPage, .bodyText {
         zoom: 65%;
     }
-}
 
-@media only screen and (max-width: 400px) {
-    .bodyPage, .bodyText {
-        zoom: 50%;
+    .facePg {
+        zoom: 85%;
+    }
+
+    .areasDiv {
+        left: 280px;
     }
 }
 
@@ -1232,15 +1279,15 @@ html, body {
     }
 }
 
-@media only screen and (max-width: 490px) {
-    .facePg {
-        zoom: 85%;
-    }
-}
-
 @media only screen and (max-width: 414px) {
     .facePg {
         zoom: 65%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bodyPage, .bodyText {
+        zoom: 50%;
     }
 }
 
