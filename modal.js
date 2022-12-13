@@ -15,6 +15,10 @@ const closeBtnEl = document.getElementById('close-btn');
 function closeModal() {
     modalEl.classList.remove('fade-in');
     modalEl.classList.add('fade-out');
+
+    setTimeout(function () {
+        modalEl.classList.add('hide');
+    }, 1000);
 }
 closeBtnEl.addEventListener('click', closeModal);
 
@@ -31,6 +35,7 @@ function consultation() {
     setTimeout(function () {
         consultEl.classList.remove('hide');
         consultEl.classList.add('fade-in');
+        modalEl.classList.add('hide');
     }, 1000 / 2);
 }
 consultBtnEl.addEventListener('click', consultation);

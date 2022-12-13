@@ -1,3 +1,9 @@
+:root {
+    --glow: #e3b496;
+}
+/* old color e5a2e9 */
+
+/* not used on hostgator */
 html, body {
     min-height: 100vh;
     padding: 0;
@@ -6,9 +12,8 @@ html, body {
     align-items: center;
 }
 
-/* FIRST PAGE */
 .firstPage {
-    background: rgb(92, 49, 49);
+    background: white;
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -26,7 +31,8 @@ html, body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(57, 32, 32, 0.5);
+    /* background-color: rgba(57, 32, 32, 0.5); */
+    background-color: rgba(92, 49, 49, 0.7);
     vertical-align: middle;
 }
 
@@ -107,7 +113,8 @@ html, body {
 }
 /* */
 
-/* BODY IMAGE */
+/* BODY PAGE */
+/* body image */
 .bodyPage {
     position: relative;
     text-align: center;
@@ -116,6 +123,28 @@ html, body {
 
 .bodyImg {
     width: 600px;
+}
+
+/* main text */
+.bodyText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    position: absolute;
+    /* width: 190px; */
+    top: -100px;
+    left: 140px;
+    background: #e3b496;
+    border-radius: 6px;
+    padding: 8px 18px;
+    /* color: white; */
+    color: rgb(92, 49, 49);
+    transition: .5s ease-out;
+}
+
+.bodyText:hover {
+    background: rgba(227, 180, 150, 0.7);
+    /* background: rgba(52, 52, 52, 0.5); */
+    transition: background .5s ease-out;
 }
 
 /* face */
@@ -174,7 +203,7 @@ html, body {
 @keyframes faceGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 50px 35px #e5a2e9;
+        box-shadow: 0 0 50px 35px var(--glow);
     }
 }
 
@@ -206,7 +235,7 @@ html, body {
 @keyframes chestGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 30px 20px #e5a2e9;
+        box-shadow: 0 0 30px 20px var(--glow);
     }
 }
 
@@ -249,7 +278,7 @@ html, body {
 @keyframes breastGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 20px 10px #e5a2e9;
+        box-shadow: 0 0 20px 10px var(--glow);
     }
 }
 
@@ -305,7 +334,7 @@ html, body {
 @keyframes armpitsGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 15px 8px #e5a2e9;
+        box-shadow: 0 0 15px 8px var(--glow);
     }
 }
 
@@ -410,7 +439,7 @@ html, body {
 @keyframes armGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 30px 20px #e5a2e9;
+        box-shadow: 0 0 30px 20px var(--glow);
     }
 }
 
@@ -442,7 +471,7 @@ html, body {
 @keyframes abGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 50px 35px #e5a2e9;
+        box-shadow: 0 0 50px 35px var(--glow);
     }
 }
 
@@ -474,7 +503,7 @@ html, body {
 @keyframes backGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 60px 50px #e5a2e9;
+        box-shadow: 0 0 60px 50px var(--glow);
     }
 }
 
@@ -506,7 +535,7 @@ html, body {
 @keyframes genGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 30px 20px #e5a2e9;
+        box-shadow: 0 0 30px 20px var(--glow);
     }
 }
 
@@ -538,7 +567,7 @@ html, body {
 @keyframes buttGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 60px 50px #e5a2e9;
+        box-shadow: 0 0 60px 50px var(--glow);
     }
 }
 
@@ -619,7 +648,7 @@ html, body {
 @keyframes legGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 30px 20px #e5a2e9;
+        box-shadow: 0 0 30px 20px var(--glow);
     }
 }
 
@@ -673,8 +702,8 @@ html, body {
 .facePg {
     /* position: relative;
     text-align: center;
-    margin: 20px;
-    width: 100%; */
+    margin: 20px; */
+    /* width: 100%;  */
     position: relative;
     text-align: center;
     margin: 20px;
@@ -691,6 +720,56 @@ html, body {
     width: 500px;
     /* height: auto;
     max-height: 100vh; */
+}
+
+.faceText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    position: absolute;
+    top: -20px;
+    left: -80px;
+    /*border: 2px solid black;*/
+    /* background-color: rgba(92, 49, 49, 0.7); */
+    background: #e3b496;
+    border-radius: 6px;
+    padding: 8px 18px;
+    /* color: white; */
+    color: rgb(92, 49, 49);
+    transition: .5s ease-out;
+}
+
+.linkText {
+    color: rgb(92, 49, 49);
+    text-decoration: none;
+}
+
+.faceText:hover {
+    background: rgba(227, 180, 150, 0.7);
+    /* background: rgba(52, 52, 52, 0.5); */
+    transition: background .5s ease-out;
+}
+
+.areasText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    position: absolute;
+    width: 190px;
+    top: -20px;
+    left: 440px;
+    /*border: 2px solid black;*/
+    background: #e3b496;
+    border-radius: 6px;
+    padding: 8px 18px;
+    color: rgb(92, 49, 49);
+    /* color: white; */
+    transition: .5s ease-out;
+}
+
+.areasText:hover {
+    /* background-color: rgba(92, 49, 49, 1); */
+    background: rgba(227, 180, 150, 0.7);
+    /* background: rgba(52, 52, 52, 0.5); */
+    transition: background .5s ease-out;
 }
 
 /* half */
@@ -733,7 +812,7 @@ html, body {
 @keyframes eyeGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 30px 20px #e5a2e9;
+        box-shadow: 0 0 30px 20px var(--glow);
     }
 }
 
@@ -765,7 +844,7 @@ html, body {
 @keyframes scalpGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 30px 20px #e5a2e9;
+        box-shadow: 0 0 30px 20px var(--glow);
     }
 }
 
@@ -797,7 +876,7 @@ html, body {
 @keyframes foreGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 40px 30px #e5a2e9;
+        box-shadow: 0 0 40px 30px var(--glow);
     }
 }
 
@@ -829,7 +908,7 @@ html, body {
 @keyframes cheekGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 30px 25px #e5a2e9;
+        box-shadow: 0 0 30px 25px var(--glow);
     }
 }
 
@@ -861,7 +940,7 @@ html, body {
 @keyframes noseGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 20px 15px #e5a2e9;
+        box-shadow: 0 0 20px 15px var(--glow);
     }
 }
 
@@ -893,7 +972,7 @@ html, body {
 @keyframes lipsGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 20px 15px #e5a2e9;
+        box-shadow: 0 0 20px 15px var(--glow);
     }
 }
 
@@ -925,7 +1004,7 @@ html, body {
 @keyframes chinGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 22px 18px #e5a2e9;
+        box-shadow: 0 0 22px 18px var(--glow);
     }
 }
 
@@ -955,7 +1034,15 @@ html, body {
     transform: rotate(130deg);
 }
 
-/* jaw */
+@keyframes jawGlow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 22px 18px var(--glow);
+    }
+}
+
+
+/* neck */
 .neckGlow {
     position: absolute;
     /* border: solid 1px black; */
@@ -983,7 +1070,7 @@ html, body {
 @keyframes neckGlow {
     from {
         color: #fff;
-        box-shadow: 0 0 60px 50px #e5a2e9;
+        box-shadow: 0 0 60px 50px var(--glow);
     }
 }
 
@@ -1016,7 +1103,7 @@ html, body {
     from {
         color: #fff;
         box-shadow: 
-            0 0 100px 75px #e5a2e9
+            0 0 90px 65px var(--glow);
             /* 0 0 10px rgba(229, 162, 233, 0.6) inset, 
             0 0 20px rgba(229, 162, 233, 0.6) inset, 
             0 0 30px rgba(229, 162, 233, 0.6) inset, 
@@ -1031,9 +1118,31 @@ html, body {
 
 
 /* Media Queries */
-@media only screen and (max-width: 615px) {
-    .bodyPage {
-        zoom: 95%;
+@media only screen and (max-width: 900px) {
+    .faceText {
+        top: -40px;
+        left: 30px;
+    }
+    
+    .areasText {
+        width: 210px;
+        top: -40px;
+        left: 330px;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    .faceText {
+        top: -40px;
+        left: 30px;
+        font-size: 30px;
+    }
+    
+    .areasText {
+        width: 120px;
+        top: -80px;
+        left: 330px;
+        font-size: 30px;
     }
 }
 
