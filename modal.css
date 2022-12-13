@@ -114,37 +114,83 @@ html, body {
 /* */
 
 /* BODY PAGE */
-/* body image */
-.bodyPage {
-    position: relative;
+.mainBodyPg {
     text-align: center;
-    margin: 20px;
-}
 
-.bodyImg {
-    width: 600px;
 }
 
 /* main text */
 .bodyText {
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
-    position: absolute;
-    /* width: 190px; */
-    top: -100px;
-    left: 140px;
+    font-weight: normal;
+    display: inline-block; 
     background: #e3b496;
     border-radius: 6px;
+    border: none;
     padding: 8px 18px;
-    /* color: white; */
     color: rgb(92, 49, 49);
     transition: .5s ease-out;
+    cursor: pointer;
 }
 
 .bodyText:hover {
     background: rgba(227, 180, 150, 0.7);
     /* background: rgba(52, 52, 52, 0.5); */
     transition: background .5s ease-out;
+    color: rgb(92, 49, 49);
+}
+
+/* dropdown text */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 116px;
+    border-radius: 0 0 6px 6px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown-content a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    background: #e3b496;
+    color: rgb(92, 49, 49);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {
+    background: rgba(227, 180, 150, 0.7);
+    transition: background .5s ease-out;
+    color: rgb(92, 49, 49);
+}    
+  
+.show {
+    display: block;
+}
+
+/* body image */
+.bodyPage {
+    position: relative;
+    text-align: center;
+    margin: 40px 20px 20px 20px;
+}
+
+.bodyImg {
+    width: 600px;
 }
 
 /* face */
@@ -738,15 +784,19 @@ html, body {
     transition: .5s ease-out;
 }
 
+.faceText:hover {
+    background: rgba(227, 180, 150, 0.7);
+    /* background: rgba(52, 52, 52, 0.5); */
+    transition: background .5s ease-out;
+}
+
 .linkText {
     color: rgb(92, 49, 49);
     text-decoration: none;
 }
 
-.faceText:hover {
-    background: rgba(227, 180, 150, 0.7);
-    /* background: rgba(52, 52, 52, 0.5); */
-    transition: background .5s ease-out;
+.linkText:hover {
+    color: rgb(92, 49, 49);
 }
 
 .areasText {
@@ -1165,19 +1215,19 @@ html, body {
 }
 
 @media only screen and (max-width: 490px) {
-    .bodyPage {
+    .bodyPage, .bodyText {
         zoom: 65%;
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .bodyPage {
+    .bodyPage, .bodyText {
         zoom: 50%;
     }
 }
 
 @media only screen and (max-width: 316px) {
-    .bodyPage {
+    .bodyPage, .bodyText {
         zoom: 40%;
     }
 }
