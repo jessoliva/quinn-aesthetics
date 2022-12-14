@@ -183,7 +183,7 @@ html, body {
 }
 
 /* body image */
-.bodyPage {
+.bodyImgPg {
     position: relative;
     text-align: center;
     margin: 40px 20px 20px 20px;
@@ -739,7 +739,7 @@ html, body {
 }
 
 /* FACE PAGE */
-/* .bodyPage {
+/* .bodyImgPg {
     position: relative;
     text-align: center;
     margin: 20px;
@@ -1240,7 +1240,7 @@ html, body {
 }
 
 @media only screen and (max-width: 615px) {
-    .bodyPage, .facePg {
+    .bodyImgPg, .facePg {
         zoom: 95%;
     }
 
@@ -1248,19 +1248,19 @@ html, body {
 }
 
 @media only screen and (max-width: 592px) {
-    .bodyPage, .facePg {
+    .bodyImgPg, .facePg {
         zoom: 90%;
     }
 }
 
 @media only screen and (max-width: 551px) {
-    .bodyPage, .facePg {
+    .bodyImgPg, .facePg {
         zoom: 80%;
     }
 }
 
 @media only screen and (max-width: 490px) {
-    .bodyPage, .bodyText {
+    .bodyImgPg, .bodyText {
         zoom: 65%;
     }
 
@@ -1274,7 +1274,7 @@ html, body {
 }
 
 @media only screen and (max-width: 316px) {
-    .bodyPage, .bodyText {
+    .bodyImgPg, .bodyText {
         zoom: 40%;
     }
 }
@@ -1286,7 +1286,7 @@ html, body {
 }
 
 @media only screen and (max-width: 400px) {
-    .bodyPage, .bodyText {
+    .bodyImgPg, .bodyText {
         zoom: 50%;
     }
 }

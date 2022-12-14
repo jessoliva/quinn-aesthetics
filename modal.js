@@ -1,4 +1,4 @@
-// first page element
+// first page element NOT FOR WEEBLY
 const firstPageEl = document.getElementById('firstPage');
 
 // modal element
@@ -6,6 +6,7 @@ const modalEl = document.getElementById('modal');
 //
 // display modal after 5 seconds
 setTimeout(function () {
+    modalEl.classList.remove('hide');
     modalEl.classList.add('fade-in');
 }, 5000);
 //
@@ -30,10 +31,12 @@ const consultBtnEl = document.getElementById('consult-btn');
 function consultation() {
     modalEl.classList.remove('fade-in');
     modalEl.classList.add('fade-out');
+
+    // NOT FOR WEEBLY
     firstPageEl.classList.add('hide');
 
     setTimeout(function () {
-        window.location.href = 'consultation.html';
+        window.location.href = 'consultationBody.html';
     }, 1000 / 2);
 }
 consultBtnEl.addEventListener('click', consultation);
